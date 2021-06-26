@@ -24,6 +24,11 @@
     padding: 20px;   
 }
 
+label{
+    font-size: large;
+    font-weight: 500;
+}
+
 .predict{
     padding-bottom: 50px;
     display: flex;

@@ -15,9 +15,9 @@ export default function App() {
         <NavBar />
         <Switch>       
         <Route exact path="/register" component={Register} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/more" component={More} />
-        <Route exact path="/" component={Home} />
+        <Route  path="/about" component={About} />
+        <Route  path="/more" component={More} />
+        <Route  path="/" component={Home} />
         </Switch>
         <Footer />
       </Router>

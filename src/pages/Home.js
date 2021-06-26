@@ -44,6 +44,7 @@ function Home() {
                         Predict
                     </Button>
                 </div>
+                
             </div>
         </div>
     )

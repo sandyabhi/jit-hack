@@ -1,13 +1,22 @@
 import React from 'react'
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import "./NavBar.css"
 
 function NavBar() {
+    const checkActive = (match, location) => {
+        if (!location) return false;
+        const { pathname } = location;
+        console.log(pathname);
+        return pathname === "/";
+    }
     return (
-        <div className="navbar">
-            <a className="active"><Link to="/">Home</Link></a>
-            <a className="active"><Link to="/more">More</Link></a>
-            <a className="active"><Link to="/about">About</Link></a>
+        <div >
+        <ul className="nav">
+                <li><NavLink className="NavLink" activeClassName="activeRoute" isActive={checkActive} to="/">Home</NavLink></li>
+                <li><NavLink className="NavLink" activeClassName="activeRoute" to="/paper">Paper</NavLink></li>
+                <li><NavLink className="NavLink" activeClassName="activeRoute" to="/weather">Weather</NavLink></li>
+                <li><NavLink className="NavLink" activeClassName="activeRoute" to="/about">About</NavLink></li>
+            </ul>
         </div>
     )
 }
