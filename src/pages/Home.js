@@ -29,23 +29,24 @@ function Home() {
     return (
         <div className="home">
             <div className="home-main">
+                <div className="home-container">
+                    <div>
+                        <img className="img-main" src={picture} alt="img" />
+                    </div>
 
-                <div>
-                    <img className="img-main" src={picture} alt="img" />
-                </div>
+                    <div className="img-label" >
+                        <label >Select image: </label>
+                        <input type="file" name="img" className="upbtn" onChange={onChangePicture} />
+                    </div>
 
-                <div className="img-label" >
-                    <label >Select image: </label>
-                    <input type="file" name="img" className="upbtn" onChange={onChangePicture} />
-                </div>
+                    <div className="predict">
 
-                <div className="predict">
-                    <Button variant="contained" color="primary">
-                        Predict
-                    </Button>
+                    </div>
                 </div>
-                
             </div>
+            <Button variant="contained" color="secondary">
+                Predict
+            </Button>
         </div>
     )
 }

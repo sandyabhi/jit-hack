@@ -11,10 +11,9 @@ function NavBar() {
     }
     return (
         <div >
-        <ul className="nav">
+            <ul className="nav">
                 <li><NavLink className="NavLink" activeClassName="activeRoute" isActive={checkActive} to="/">Home</NavLink></li>
-                <li><NavLink className="NavLink" activeClassName="activeRoute" to="/paper">Paper</NavLink></li>
-                <li><NavLink className="NavLink" activeClassName="activeRoute" to="/weather">Weather</NavLink></li>
+                <li><NavLink className="NavLink" activeClassName="activeRoute" to="/more">More</NavLink></li>
                 <li><NavLink className="NavLink" activeClassName="activeRoute" to="/about">About</NavLink></li>
             </ul>
         </div>
