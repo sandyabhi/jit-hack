@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import axios from "axios"
 import "./Home.css"
+import { Button } from "@material-ui/core"
 
 function Home() {
 
@@ -26,19 +27,24 @@ function Home() {
 
 
     return (
-        <div style={{ padding: 30 }}>
+        <div className="home">
+            <div className="home-main">
 
-            <img src={picture} alt="img" />
+                <div>
+                    <img className="img-main" src={picture} alt="img" />
+                </div>
 
-            <div style={{ padding: 30 }}>
-                <label for="img">Select image:</label>
-                <input type="file" name="img" onChange={onChangePicture} />
+                <div className="img-label" >
+                    <label >Select image: </label>
+                    <input type="file" name="img" className="upbtn" onChange={onChangePicture} />
+                </div>
+
+                <div className="predict">
+                    <Button variant="contained" color="primary">
+                        Predict
+                    </Button>
+                </div>
             </div>
-
-            <div style={{ padding: 30 }}>
-                <button type="submit">Predict</button>
-            </div>
-
         </div>
     )
 }

@@ -1,0 +1,42 @@
+.home{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+.home-main{
+    display: block;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+.img-main{
+    width: 400px;
+    height: 250px;
+    padding: 20px;
+}
+
+.img-label{
+    padding: 20px;   
+}
+
+.predict{
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+}
+
+.pre-btn{
+    padding: 10px;
+}
+
+.upbtn{
+    font-size: large;
+    font-weight: 500;
+    border: none;
+}
